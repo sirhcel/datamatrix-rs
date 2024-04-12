@@ -20,7 +20,7 @@ pub(super) trait TestEncoderLogic: Sized {
     ) -> Option<usize>;
 }
 
-pub(super) struct DummyLogic(Option<usize>, isize);
+pub(super) struct DummyLogic((), ());
 
 impl DummyLogic {
     pub fn new(
