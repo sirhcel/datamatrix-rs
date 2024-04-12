@@ -77,4 +77,4 @@ jobs:
           # to explicitly specify the target which - fingers crossed - matches
           # our CI runner.
           command: check
-          args: +nightly check -Zbuild-std=core,alloc --target x86_64-unknown-linux-gnu
+          args: -Zbuild-std=core,alloc --target x86_64-unknown-linux-gnu
