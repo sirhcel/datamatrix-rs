@@ -117,6 +117,7 @@ impl Sub for Frac {
 }
 
 impl PartialOrd for Frac {
+    #[allow(clippy::non_canonical_partial_ord_impl)]
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
         self.0.partial_cmp(&other.0)
     }
